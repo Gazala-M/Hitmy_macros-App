@@ -1,4 +1,4 @@
-@media screen and (max-width: 1400px) {
+/*@media screen and (max-width: 1400px) {
   header{
     height: 18vh;
   }
@@ -7,10 +7,8 @@
 @media screen and (max-width: 1200px) {
   header {
     height: 15vh;
-  }
- 
-  
-}
+}  
+}  */
 @media screen and (max-width: 991px) {
   .brand{
     top: 12px;
@@ -163,6 +161,15 @@ top: 12px;
   .title{
     font-size: 34px;
   }
+  .firsthalf::before {
+    width: 115px;
+    height: 100px;
+  }
+  .firsthalf::after{
+    
+    width: 130px;
+    height: 100px;
+  }
   .home-top h2 {
     font-size: 30px;
     line-height: 35px;
@@ -237,6 +244,15 @@ top: 12px;
   line-height: 25px;
   margin: 0px 0px;
   padding: 5px 0px;
+  }
+   .firsthalf::before {
+    width: 80px;
+    height: 55px;
+  }
+  .firsthalf::after{
+    
+    width: 80px;
+    height: 55px;
   }
   .heading-bg {
   
