@@ -79,12 +79,18 @@ nav ul li a{
     font-weight: 600;
     text-decoration: none;
 }
-nav ul li a:hover{
-background: #7FD87F;
-padding: 10px;
-border-radius: 8px;
-cursor: pointer;
-}
+.smooth-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 0 solid #7FD87F;
+    transition: border-bottom 0.3s ease; /* Adding a transition to the border-bottom property */
+  }
+  
+  .smooth-link:hover{
+    border-bottom-width: 2px; 
+  }
+
 a.activ{
     background: #7FD87F;
     padding: 10px;
