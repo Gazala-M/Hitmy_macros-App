@@ -293,7 +293,7 @@ integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmF
 
               </div>
               <div>
-              <button class="aos-init aos-animate" data-aos="zoom-in" id="btn" type="submit">Submit</button>
+              <button class="aos-init aos-animate" data-aos="zoom-in" id="btn" type="submit" onclick="sendMail()">Submit</button>
               </div>
             </form>
             </div>
@@ -324,5 +324,13 @@ integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmF
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script src="Resp.js"> </script>
+     <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("9jJjyrzZJK0Kb4Mtt");
+   })();
+</script>
 </body>
 </html>
