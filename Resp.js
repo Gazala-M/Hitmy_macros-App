@@ -8,7 +8,7 @@ burger.addEventListener('click', ()=>{
     navbar.classList.toggle('h-nav-resp');
 
     burger.classList.toggle("active");
-    nav.classList.toggle("active");
+    nav.classList.toggle("active") ;
 })   */
 function sendMail() {
   var params = {
