@@ -10,6 +10,26 @@ burger.addEventListener('click', ()=>{
     burger.classList.toggle("active");
     nav.classList.toggle("active");
 })   */
+function sendMail() {
+  var params = {
+    username: document.getElementById("username").value, 
+    email: document.getElementById("email").value, 
+  };
+
+const serviceID = "service_89gqlzw";
+const templateID = "template_qa2a28r";
+
+emailjs
+.send(serviceID, templateID, params)
+.then( (res) => {
+     document.getElementById("username").value = ""; 
+     document.getElementById("email").value = "";
+     console.log(res);
+     alert("your message sent successfully");
+  })
+.catch((err) => console.log(err));
+
+}
 function closeNavbar() {
   var navlist = document.getElementById('navlist');
   navlist.style.display = 'none';
